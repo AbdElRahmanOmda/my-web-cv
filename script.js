@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("CV script loaded and ready!");
 
+    // --- Preloader Logic ---
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+        }, 300); // Keep preloader for 300ms to ensure it's seen
+    }
+
     // --- Theme Toggle Logic ---
     const themeToggle = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme');
