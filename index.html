@@ -11,23 +11,54 @@
 <body>
     <div class="container">
         <header>
-            <h1>Abdelrahman Emad Hamdy</h1>
-            <p class="role-title">Software Engineer | AI & Model-Based Design Specialist</p>
-            <div class="contact-info">
-                <a href="mailto:abdelrahmanemad05@outlook.com"><i class="fas fa-envelope"></i> abdelrahmanemad05@outlook.com</a>
-                <span><i class="fas fa-phone"></i> (+20) 0102 064 0514</span>
-                <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <div class="header-content">
+                <img src="Image.jpg" alt="Abdelrahman Emad Hamdy" class="profile-img">
+                <div class="header-text">
+                    <h1>Abdelrahman Emad Hamdy</h1>
+                    <p class="role-title">Software Engineer | AI & Model-Based Design Specialist</p>
+                    <div class="header-actions">
+                        <div id="contact" class="contact-info">
+                            <a href="mailto:abdelrahmanemad05@outlook.com"><i class="fas fa-envelope"></i> abdelrahmanemad05@outlook.com</a>
+                            <span><i class="fas fa-phone"></i> (+20) 0102 064 0514</span>
+                            <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                        <!-- Download CV Button -->
+                        <a href="Abdelrahman_Emad_CV.pdf" download class="btn-download">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="theme-toggle">
+                                <input type="checkbox" id="theme-toggle" />
+                                <span class="slider round"></span>
+                                <i class="fas fa-sun sun-icon"></i>
+                                <i class="fas fa-moon moon-icon"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
-        <section class="section summary-section">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="summary" class="section summary-section">
             <h2>EXECUTIVE SUMMARY</h2>
             <p class="summary-text">
                 A results-driven Software Engineer with proven expertise in architecting safety-critical automotive systems and developing innovative AI solutions. Experienced in leveraging Model-Based Design (MBD) and multi-agent architectures to solve complex engineering challenges, with hands-on success in building advanced RAG systems and data-driven virtual sensors. Currently pursuing a Master's in Aerospace Engineering to further deepen a strong foundation in control systems and complex system modeling.
             </p>
         </section>
         
-        <section class="section skills-section">
+        <section id="expertise" class="section skills-section">
             <h2>TECHNICAL EXPERTISE</h2>
             <div class="expertise-grid">
                 <div class="expertise-item">
@@ -67,58 +98,96 @@
 
             <div class="core-skills">
                 <h3>Core Technical Skills</h3>
-                <div class="skill-tags">
-                    <span class="tag">Matlab (Excellent)</span>
-                    <span class="tag">Simulink (Excellent)</span>
-                    <span class="tag">Embedded C</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">AUTOSAR</span>
-                    <span class="tag">ISO 26262</span>
-                    <span class="tag">Stateflow</span>
+                <div class="skills-container">
+                    <div class="skill">
+                        <span class="skill-name">MATLAB / Simulink / Stateflow</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Embedded C / MISRA C</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Python (AI/ML, Flask)</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">AUTOSAR Classic & ISO 26262</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="90%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section project-list-section">
+        <section id="projects" class="section project-list-section">
             <h2>KEY PROJECTS</h2>
 
-            <div class="item project-item">
-                <div class="title-date-row">
-                    <h3>MBD Copilot: An LLM Interface for Model-Based Design <span class="badge">Personal Project</span></h3>
-                    <span class="date-range">AI/MBD Innovation</span>
+            <div class="project-gallery">
+                <div class="project-card expandable">
+                    <img src="images/project-copilot.jpg" alt="MBD Copilot Project">
+                    <div class="project-card-content">
+                        <div class="title-date-row">
+                            <h3>MBD Copilot: An LLM Interface for Model-Based Design <span class="badge">Personal Project</span></h3>
+                        </div>
+                        <ul>
+                            <li>Architected a multi-agent system that can reason, plan, and execute complex tasks directly within the MATLAB environment.</li>
+                            <li>Engineered a tool to translate Simulink/Stateflow to concise MATLAB API scripts and build Simulink subsystems from natural language.</li>
+                        </ul>
+                        <div class="project-details">
+                            <div class="project-links">
+                                <a href="YOUR_GITHUB_REPO_URL_1" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>**Autonomous MATLAB Copilot:** Architected a multi-agent system (using a reasoning LLM) that can reason, plan, and execute complex tasks directly within the MATLAB environment.</li>
-                    <li>**Model-to-Script/NL to Model:** Engineered a tool to translate Simulink/Stateflow to concise MATLAB API scripts and developed a feature for natural language requirements to automatically build Simulink subsystems.</li>
-                    <li>**Automated Requirements Generation:** Analyzes subsystems to automatically generate formal requirements documents covering Functional, Interface, and Architectural aspects.</li>
-                </ul>
-            </div>
 
-            <div class="item project-item">
-                <div class="title-date-row">
-                    <h3>Local Multi-Agent RAG AI System for Automotive Knowledge Management</h3>
-                    <span class="date-range">AI/ML Engineering</span>
+                <div class="project-card expandable">
+                    <img src="images/project-rag.jpg" alt="Multi-Agent RAG AI System">
+                    <div class="project-card-content">
+                        <div class="title-date-row">
+                            <h3>Local Multi-Agent RAG AI System for Automotive Knowledge Management</h3>
+                        </div>
+                        <ul>
+                            <li>Developed a multi-agent RAG system to provide grounded answers from a private knowledge base (MBD standards, AUTOSAR, etc.).</li>
+                            <li>Architected a hierarchical system with an orchestrator and self-correction loop for refining answers from the RAG agent.</li>
+                        </ul>
+                        <div class="project-details">
+                            <div class="project-links">
+                                <a href="YOUR_GITHUB_REPO_URL_2" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>Developed a multi-agent RAG system to provide grounded answers from a private knowledge base (MBD standards, AUTOSAR, ASPICE/V-Model).</li>
-                    <li>Architected a hierarchical system with an orchestrator and self-correction loop where a Supervisor agent evaluates and refines answers from the RAG agent (distinct local LLMs used).</li>
-                </ul>
-            </div>
 
-            <div class="item project-item">
-                <div class="title-date-row">
-                    <h3>Data-Driven Virtual Sensor for Dogclutch Torque Estimation</h3>
-                    <span class="date-range">August 2025 – September 2025</span>
+                <div class="project-card expandable">
+                    <img src="images/project-sensor.jpg" alt="Virtual Sensor Project">
+                    <div class="project-card-content">
+                        <div class="title-date-row">
+                            <h3>Data-Driven Virtual Sensor for Dogclutch Torque Estimation</h3>
+                        </div>
+                        <ul>
+                            <li>Developed a virtual sensor using an ANN to estimate dogclutch torque in electric powertrains, achieving high prediction accuracy.</li>
+                            <li>First author of the research paper: "Modeling of Dogclutch Torque using Virtual Sensor Method...".</li>
+                        </ul>
+                        <div class="project-details">
+                            <div class="project-links">
+                                <a href="YOUR_PAPER_LINK" class="project-link" target="_blank"><i class="fas fa-file-alt"></i> Read Paper</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>Developed a virtual sensor using an Artificial Neural Network (ANN) to estimate dogclutch torque in electric powertrains, achieving high prediction accuracy (RMSE as low as 2.24).</li>
-                    <li>First author of the research paper: "Modeling of Dogclutch Torque using Virtual Sensor Method: An Application in Electric Powertrains".</li>
-                </ul>
             </div>
         </section>
 
-        <section class="section experience-section">
+        <section id="experience" class="section experience-section">
             <h2>PROFESSIONAL EXPERIENCE</h2>
             
             <div class="item experience-item">
@@ -150,7 +219,7 @@
             </div>
         </section>
 
-        <section class="section education-section">
+        <section id="education" class="section education-section">
             <h2>EDUCATION & TRAINING</h2>
 
             <div class="item education-item">
@@ -178,6 +247,30 @@
             </div>
         </section>
 
+        <section id="contact-form" class="section contact-form-section">
+            <h2>CONTACT ME</h2>
+            <p class="contact-intro">Have a question, a project proposal, or just want to say hello? Go ahead.</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is the subject?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+
         <section class="section other-info-section">
             <h2>OTHER INFORMATION</h2>
             <div class="other-info-flex">
@@ -192,5 +285,19 @@
             </div>
         </section>
     </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="YOUR_LINKEDIN_URL" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="YOUR_MAIN_GITHUB_URL" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <!-- Add other social links here if you have them -->
+        </div>
+        <p class="copyright">&copy; 2024 Abdelrahman Emad Hamdy. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
 </body>
 </html>
