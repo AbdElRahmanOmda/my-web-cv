@@ -91,7 +91,7 @@ body.dark-mode #preloader {
     max-width: 800px; /* Reduced width for focus, like the reference site */
     margin: 0 auto;
     background-color: var(--background-color);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 0 40px 40px 40px; /* Padding for inner content */
 }
 
@@ -100,8 +100,6 @@ header {
     padding: 40px 0 20px 0;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--divider-color);
-    display: flex;
-    align-items: center;
 }
 
 .header-content {
@@ -131,14 +129,6 @@ header {
     margin-bottom: 5px;
 }
 
-/* Keep original h1 selector for specificity if needed elsewhere, but new structure uses .header-text h1 */
-header h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--primary-text);
-    margin-bottom: 5px;
-}
-
 .role-title {
     font-size: 1.1em;
     font-weight: 400;
@@ -148,10 +138,10 @@ header h1 {
 
 .header-actions {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    flex-shrink: 0;
 }
 
 /* Theme Toggle Switch */
@@ -203,9 +193,10 @@ input:checked + .slider:before { transform: translateX(24px); }
 .contact-info {
     font-size: 0.9em;
     color: var(--secondary-text);
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 8px;
+    margin-top: 15px;
 }
 
 .contact-info a, .contact-info span {
@@ -220,7 +211,8 @@ input:checked + .slider:before { transform: translateX(24px); }
 
 .contact-info i {
     color: var(--accent-color);
-    margin-right: 5px;
+    margin-right: 8px;
+    width: 15px; /* Align icons */
 }
 
 /* Download CV Button */
@@ -253,7 +245,7 @@ input:checked + .slider:before { transform: translateX(24px); }
     border-radius: 6px;
     padding: 0.25rem 0;
     margin-bottom: 35px;
-    position: sticky;
+    position: -webkit-sticky; /* For Safari */
     top: 10px; /* Small gap from the top */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
@@ -553,6 +545,7 @@ h2 {
 .item ul {
     list-style: disc;
     padding-left: 20px;
+    margin-top: 5px;
     font-size: 0.95em; /* Slightly smaller font for list items */
     color: var(--body-text-color);
 }

@@ -21,25 +21,21 @@
                 <div class="header-text">
                     <h1>Abdelrahman Emad Hamdy</h1>
                     <p class="role-title">Software Engineer | AI & Model-Based Design Specialist</p>
-                    <div class="header-actions">
-                        <div id="contact" class="contact-info">
-                            <a href="mailto:abdelrahmanemad05@outlook.com"><i class="fas fa-envelope"></i> abdelrahmanemad05@outlook.com</a>
-                            <span><i class="fas fa-phone"></i> (+20) 0102 064 0514</span>
-                            <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        </div>
-                        <!-- Download CV Button -->
-                        <a href="Abdelrahman_Emad_CV.pdf" download class="btn-download">
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
-                        <!-- Theme Toggle -->
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="theme-toggle">
-                                <input type="checkbox" id="theme-toggle" />
-                                <span class="slider round"></span>
-                                <i class="fas fa-sun sun-icon"></i>
-                                <i class="fas fa-moon moon-icon"></i>
-                            </label>
-                        </div>
+                    <div id="contact" class="contact-info">
+                        <a href="mailto:abdelrahmanemad05@outlook.com"><i class="fas fa-envelope"></i> abdelrahmanemad05@outlook.com</a>
+                        <span><i class="fas fa-phone"></i> (+20) 0102 064 0514</span>
+                        <a href="https://www.linkedin.com/in/abd-elrahman-emad-46ab7915a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="Abdelrahman_Emad_CV.pdf" download class="btn-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" id="theme-toggle" />
+                            <span class="slider round"></span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -69,9 +65,10 @@
                 <div class="expertise-item">
                     <h3>Software Safety & Quality</h3>
                     <ul class="clean-list">
-                        <li>Certified Valeo TR (Technical Reviewer) for MBD Component Design.</li>
+                        <li>Certified Valeo TR (Technical Reviewer) for MBD Component Design and VnV process.</li>
                         <li>ISO 26262 Software Safety Methodology (up to ASIL D).</li>
                         <li>Static Code Analysis (QAC, Klocwork, Polyspace).</li>
+                        <li>Agile Project Management & Formal Peer Review.</li>
                     </ul>
                 </div>
                 <div class="expertise-item">
@@ -79,14 +76,14 @@
                     <ul class="clean-list">
                         <li>Advanced Simulink, Stateflow, and MATLAB scripting.</li>
                         <li>Production Code Generation (Embedded Coder, TargetLink).</li>
-                        <li>MBD for AUTOSAR-compliant software components.</li>
-                        <li>MIL & SIL Testing, MBD automation tools.</li>
+                        <li>Developed and validated 50+ Simulink models for production systems.</li>
+                        <li>Automated Test Case Generation & Model Verification.</li>
                     </ul>
                 </div>
                 <div class="expertise-item">
                     <h3>AI/ML & Robotics</h3>
                     <ul class="clean-list">
-                        <li>Multi-Agent System Architecture (Hierarchical, Orchestrator-based).</li>
+                        <li>Multi-Agent System Architecture (Orchestrator-based).</li>
                         <li>Python for AI/ML (PyTorch, Scikit-learn) & Web (Flask).</li>
                         <li>Robot Operating System (ROS) Package Development.</li>
                     </ul>
@@ -143,12 +140,13 @@
                             <h3>MBD Copilot: An LLM Interface for Model-Based Design <span class="badge">Personal Project</span></h3>
                         </div>
                         <ul>
-                            <li>Architected a multi-agent system that can reason, plan, and execute complex tasks directly within the MATLAB environment.</li>
-                            <li>Engineered a tool to translate Simulink/Stateflow to concise MATLAB API scripts and build Simulink subsystems from natural language.</li>
+                            <li>Developed a feature to convert natural language requirements into executable MATLAB scripts that build Simulink subsystems instantly.</li>
+                            <li>Engineered a tool to translate Simulink/Stateflow into concise MATLAB API scripts for LLM analysis.</li>
+                            <li>Architected a local, multi-agent system in MATLAB for autonomous task execution.</li>
                         </ul>
                         <div class="project-details">
                             <div class="project-links">
-                                <a href="YOUR_GITHUB_REPO_URL_1" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                                <a href="https://github.com/AbdelrahmanOmda/MBD_Copilot" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -158,15 +156,15 @@
                     <img src="images/project-rag.jpg" alt="Multi-Agent RAG AI System">
                     <div class="project-card-content">
                         <div class="title-date-row">
-                            <h3>Local Multi-Agent RAG AI System for Automotive Knowledge Management</h3>
+                            <h3>Local Multi-Agent RAG AI System for Automotive Knowledge Management <span class="badge">Personal Project</span></h3>
                         </div>
                         <ul>
                             <li>Developed a multi-agent RAG system to provide grounded answers from a private knowledge base (MBD standards, AUTOSAR, etc.).</li>
-                            <li>Architected a hierarchical system with an orchestrator and self-correction loop for refining answers from the RAG agent.</li>
+                            <li>Implemented a cyclical self-correction loop where a Supervisor agent critiques and refines answers.</li>
                         </ul>
                         <div class="project-details">
                             <div class="project-links">
-                                <a href="YOUR_GITHUB_REPO_URL_2" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                                <a href="https://github.com/AbdelrahmanOmda/Multi-Agent-RAG-AI-System" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +174,7 @@
                     <img src="images/project-sensor.jpg" alt="Virtual Sensor Project">
                     <div class="project-card-content">
                         <div class="title-date-row">
-                            <h3>Data-Driven Virtual Sensor for Dogclutch Torque Estimation</h3>
+                            <h3>Data-Driven Virtual Sensor for Dogclutch Torque Estimation <span class="badge">Personal Project</span></h3>
                         </div>
                         <ul>
                             <li>Developed a virtual sensor using an ANN to estimate dogclutch torque in electric powertrains, achieving high prediction accuracy.</li>
@@ -184,7 +182,25 @@
                         </ul>
                         <div class="project-details">
                             <div class="project-links">
-                                <a href="YOUR_PAPER_LINK" class="project-link" target="_blank"><i class="fas fa-file-alt"></i> Read Paper</a>
+                                <a href="https://github.com/AbdelrahmanOmda/Data-Driven-Virtual-Sensor" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card expandable">
+                    <img src="images/project-agent.jpg" alt="MATLAB Agent Orchestrator">
+                    <div class="project-card-content">
+                        <div class="title-date-row">
+                            <h3>MATLAB Agent Orchestrator <span class="badge">Personal Project</span></h3>
+                        </div>
+                        <ul>
+                            <li>Engineered a native MATLAB framework for orchestrating complex, multi-agent workflows, mirroring Python's LangGraph.</li>
+                            <li>Developed a stateful, graph-based engine with conditional routing and a Human-in-the-Loop (HIL) approval gate for safety.</li>
+                        </ul>
+                        <div class="project-details">
+                            <div class="project-links">
+                                <a href="https://github.com/AbdelrahmanOmda/MATLAB-Agent-Orchestrator" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -198,9 +214,12 @@
             <div class="item experience-item">
                 <div class="title-date-row">
                     <h3>48V Small Mobility Control Unit (SMCU) - Valeo</h3>
-                    <span class="date-range">Ongoing (Aug 2024 - Present)</span>
+                    <span class="date-range">Aug 2024 - Present</span>
                 </div>
-                <p>Developing an inverter optimized for SMMG machines (ASIL B safety rating). Responsible for software design, development, and testing following MBD and AutoSAR standards.</p>
+                <ul>
+                    <li>Architected and developed the complete software for a real-time embedded Powertrain/Vehicle Control Unit (PCU/VCU).</li>
+                    <li>Designed and implemented critical safety-critical features (ASIL B), including a challenge-response immobilizer (AES-128).</li>
+                </ul>
             </div>
 
             <div class="item experience-item">
@@ -220,7 +239,9 @@
                     <h3>iSTARS & DCDC Generic Projects - Valeo</h3>
                     <span class="date-range">Apr 2022 - Feb 2023</span>
                 </div>
-                <p>Involved in the design, development, and testing of Integrated Starter Alternator Reversible System (iSTARS) and DCDC converter software, focusing on new diagnostics, calibration updates, and generating Autosar Code via MBD approach.</p>
+                <ul>
+                    <li>Designed, developed, and tested software for iSTARS and DCDC converter projects using an MBD approach to generate AUTOSAR-compliant code.</li>
+                </ul>
             </div>
         </section>
 
@@ -245,17 +266,25 @@
             
             <div class="item education-item">
                 <div class="title-date-row">
+                    <h3>AI for Engineering Training - Valeo</h3>
+                    <span class="date-range">2024 (16 hours)</span>
+                </div>
+                <p class="institution">Gained hands-on experience with AI tools for requirements automation, static analysis, and automated test case generation.</p>
+            </div>
+
+            <div class="item education-item">
+                <div class="title-date-row">
                     <h3>Building and Evaluating Data Agents</h3>
                     <span class="date-range">2025 (40 hours)</span>
                 </div>
-                <p class="institution">deeplearning.ai & Snowflake</p>
+                <p class="institution">deeplearning.ai & Snowflake. Learned to build and evaluate data agents using multi-agent workflows (LangGraph).</p>
             </div>
         </section>
 
         <section id="contact-form" class="section contact-form-section">
             <h2>CONTACT ME</h2>
             <p class="contact-intro">Have a question, a project proposal, or just want to say hello? Go ahead.</p>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form action="https://formspree.io/f/mwvpknaw" method="POST">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -293,8 +322,8 @@
 
     <footer>
         <div class="social-links">
-            <a href="YOUR_LINKEDIN_URL" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="YOUR_MAIN_GITHUB_URL" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abd-elrahman-emad-46ab7915a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AbdelrahmanOmda" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
             <!-- Add other social links here if you have them -->
         </div>
         <p class="copyright">&copy; 2024 Abdelrahman Emad Hamdy. All Rights Reserved.</p>
